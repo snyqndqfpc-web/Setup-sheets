@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Sprint-Car Setup Sheets</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{--accent:#ffb703;--bg:#111;--text:#eee;--card:#1c1c1c;font-family:system-ui,-apple-system,segoe ui,sans-serif}
+body{margin:0;background:var(--bg);color:var(--text)}
+section{padding:clamp(2rem,5vw,4rem) 1rem;max-width:900px;margin:auto;text-align:center}
+h1{font-size:clamp(2.2rem,6vw,3.2rem);letter-spacing:-.5px;margin:0}
+h2{font-size:clamp(1.4rem,4vw,2rem);margin:.5em 0}
+p{line-height:1.55;margin:.5em 0 1em}
+.btn{display:inline-block;background:var(--accent);color:#000;padding:.8em 1.4em;border-radius:4px;font-weight:700;text-decoration:none;margin-top:1em;transition:.2s}
+.btn:hover{filter:brightness(1.1)}
+.grid{display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center}
+.card{background:var(--card);padding:2rem 1.5rem;border-radius:8px;flex:1 1 260px}
+.price{font-size:2.2rem;font-weight:700;color:var(--accent)}
+.toggle{cursor:pointer;background:var(--card);padding:1rem;border-radius:6px;margin:.6rem 0;text-align:left}
+.toggle::after{content:"+";float:right;font-size:1.2rem}
+.toggle.active::after{content:"−"}
+.panel{display:none;padding:.5rem 1rem;text-align:left}
+footer{font-size:.8rem;padding:2rem 1rem;text-align:center;opacity:.6}
+@media(max-width:600px){h1{font-size:2rem}}
+</style>
+</head>
+<body>
+<section>
+<h1>Stop Guessing. Start Winning.</h1>
+<p>AI-built sprint-car setup sheets that actually drop your lap-time — $9 per race, 30-second delivery.</p>
+<a class="btn" href="https://buy.stripe.com/TEST_TEST_TEST">Get My Setup Now →</a>
+</section>
+<section>
+<h2>The Problem</h2>
+<div class="grid">
+<div class="card"><h3>🤑</h3><p>Burning $600 of tyres trying to find the sweet spot?</p></div>
+<div class="card"><h3>⏱️</h3><p>Wasting 3 practice sessions while the sun goes down?</p></div>
+<div class="card"><h3>📉</h3><p>Still 0.4 sec off the fast guys?</p></div>
+</div>
+</section>
+<section>
+<h2>How It Works</h2>
+<ol style="text-align:left;max-width:600px;margin:auto">
+<li>Pick your track, class & weather.</li>
+<li>Our AI crunches 500 proven setups.</li>
+<li>Instant PDF: pressures, shocks, stagger, gearing.</li>
+<li>Go race — most users see −0.3 sec on first night.</li>
+</ol>
+</section>
+<section>
+<h2>Real Customers, Real Gains</h2>
+<div class="card" style="max-width:600px;margin:auto">
+<p>“We went 15th to 3rd after changing exactly what the sheet said. Unreal for nine bucks.”<br><strong>— Tyler R., 410 Sprint-Car, Knoxville</strong></p>
+</div>
+</section>
+<section>
+<h2>Simple Pricing</h2>
+<div class="grid">
+<div class="card">
+<div class="price">$9</div>
+<p>Single Race<br>One setup sheet</p>
+<a class="btn" href="https://buy.stripe.com/TEST_TEST_TEST">Buy Now</a>
+</div>
+<div class="card">
+<div class="price">$29<span style="font-size:1rem">/mo</span></div>
+<p>Unlimited<br>Every track, every week</p>
+<a class="btn" href="https://buy.stripe.com/TEST_TEST_TEST">Start Free Trial</a>
+</div>
+</div>
+</section>
+<section>
+<h2>FAQ</h2>
+<div class="toggle" onclick="this.classList.toggle('active');this.nextElementSibling.style.display=this.nextElementSibling.style.display=='block'?'none':'block'">Do I need special software?</div>
+<div class="panel">Nope — PDF opens on any phone.</div>
+<div class="toggle" onclick="this.classList.toggle('active');this.nextElementSibling.style.display=this.nextElementSibling.style.display=='block'?'none':'block'">What classes?</div>
+<div class="panel">410 Wing, 360 Wing, 305 Wing, Wingless right now. More coming.</div>
+<div class="toggle" onclick="this.classList.toggle('active');this.nextElementSibling.style.display=this.nextElementSibling.style.display=='block'?'none':'block'">Weather changes — is the sheet still good?</div>
+<div class="panel">We update automatically up to 2 hrs before hot-laps.</div>
+</section>
+<footer>
+Built by a 16-year-old racer for racers.<br>
+<a style="color:var(--accent)" href="https://instagram.com/YOUR_HANDLE">Instagram</a> | <a style="color:var(--accent)" href="mailto:you@email.com">Email</a><br>
+© 2025 AI Setup Sheets
+</footer>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'})}));
+</script>
+</body>
+</html>
